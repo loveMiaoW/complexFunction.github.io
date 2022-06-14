@@ -6,89 +6,89 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <style type="text/css">
         *{
-    /* 初始化 取消页面内外边距 */
-    margin: 0;
-    padding: 0;
-}
-body{
-    /* 100%窗口高度 */
-    height: 100vh;
-    background-color: #000;
-    /* 弹性布局 水平、垂直居中 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-section{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-section .item{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-section .item .a{
-    color: #fff;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 10vw;
-    top: 0;
-    opacity: 1;
-    transition: top 0.5s,opacity 0.5s;
-}
-/* 切割文字 */
-section .item .a:nth-child(1){
-    position: absolute;
-    clip-path: polygon(0% 0%,100% 0%,100% 51%,0% 51%);
-}
-section .item .a:nth-child(2){
-    position: relative;
-    clip-path: polygon(0% 50%,100% 50%,100% 100%,0% 100%);
-}
-/* 触发景深效果 */
-section:hover .item{
-    filter: blur(10px);
-    transform: scale(0.8);
-    transition: filter 0.5s,transform 0.5s;
-}
-/* 对应的取消景深效果 */
-section .item:hover{
-    filter: blur(0px);
-    transform: scale(1);
-    transition: filter 0.5s,transform 0.5s;
-}
-/* 上半部分上移并变淡 */
-section .item:hover .a:nth-child(1){
-    top: -40px;
-    opacity: 0.5;
-    transition: top 0.5s,opacity 0.5s;
-}
-/* 下半部分下移并变淡 */
-section .item:hover .a:nth-child(2){
-    top: 40px;
-    opacity: 0.5;
-    transition: top 0.5s,opacity 0.5s;
-}
-/* 裂开后显示的文字 */
-section .item a{
-    position: absolute;
-    color: #fff;
-    text-decoration: none;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-section .item a:hover{
-    text-decoration: underline;
-}
-section .item:hover a{
-    opacity: 1;
-    transition: opacity 0.5s;
-}
+            /* 初始化 取消页面内外边距 */
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /* 100%窗口高度 */
+            height: 100vh;
+            background-color: #000;
+            /* 弹性布局 水平、垂直居中 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        section .item{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section .item .a{
+            color: #fff;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 10vw;
+            top: 0;
+            opacity: 1;
+            transition: top 0.5s,opacity 0.5s;
+        }
+        /* 切割文字 */
+        section .item .a:nth-child(1){
+            position: absolute;
+            clip-path: polygon(0% 0%,100% 0%,100% 51%,0% 51%);
+        }
+        section .item .a:nth-child(2){
+            position: relative;
+            clip-path: polygon(0% 50%,100% 50%,100% 100%,0% 100%);
+        }
+        /* 触发景深效果 */
+        section:hover .item{
+            filter: blur(10px);
+            transform: scale(0.8);
+            transition: filter 0.5s,transform 0.5s;
+        }
+        /* 对应的取消景深效果 */
+        section .item:hover{
+            filter: blur(0px);
+            transform: scale(1);
+            transition: filter 0.5s,transform 0.5s;
+        }
+        /* 上半部分上移并变淡 */
+        section .item:hover .a:nth-child(1){
+            top: -40px;
+            opacity: 0.5;
+            transition: top 0.5s,opacity 0.5s;
+        }
+        /* 下半部分下移并变淡 */
+        section .item:hover .a:nth-child(2){
+            top: 40px;
+            opacity: 0.5;
+            transition: top 0.5s,opacity 0.5s;
+        }
+        /* 裂开后显示的文字 */
+        section .item a{
+            position: absolute;
+            color: #F7F3EE;
+            text-decoration: none;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        section .item a:hover{
+            text-decoration: underline;
+        }
+        section .item:hover a{
+            opacity: 1;
+            transition: opacity 0.5s;
+        }
     </style>
 </head>
 
@@ -97,17 +97,20 @@ section .item:hover a{
         <div class="item">
             <div class="a">刘徽</div>
             <div class="a">刘徽</div>
-            <a href="#">点击了解更多</a>
+            <a href="https://baike.baidu.com/item/%E5%88%98%E5%BE%BD/42748
+" target="_blank">点击了解更多</a>
         </div>
         <div class="item">
             <div class="a">欧几里得</div>
             <div class="a">欧几里得</div>
-            <a href="#">点击了解更多</a>
+            <a href="https://baike.baidu.com/item/%E6%AC%A7%E5%87%A0%E9%87%8C%E5%BE%97/182343
+" target="_blank">点击了解更多</a>
         </div>
         <div class="item">
             <div class="a">陈省身</div>
             <div class="a">陈省身</div>
-            <a href="#">点击了解更多</a>
+            <a href="https://baike.baidu.com/item/%E9%99%88%E7%9C%81%E8%BA%AB/602147
+" target="_blank">点击了解更多</a>
         </div>
     </section>
 </body>
